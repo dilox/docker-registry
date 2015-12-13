@@ -1,0 +1,22 @@
+nginx:
+  image: "nginx:1.9"
+  ports:
+    - 443:443
+  links:
+    - registry:registry
+  volumes:
+    - ./nginx/:/etc/nginx/conf.d:ro
+
+registry:
+  image: registry:2
+  ports:
+    - 127.0.0.1:5000:5000
+  environment:
+    - REGISTRY_STORAGE=s3
+    - REGISTRY_STORAGE_S3_REGION=eu-west-1
+    - REGISTRY_STORAGE_S3_BUCKET=sciabarra-docker-registry
+    - REGISTRY_STORAGE_S3_ACCESSKEY=
+    - REGISTRY_STORAGE_S3_SECRETKEY=
+  volumes:
+    - ./data:/data
+
