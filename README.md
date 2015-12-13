@@ -2,7 +2,7 @@
 
 - How to run a "normal" registry: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-docker-registry-on-ubuntu-14-04
 
-- Run registry:
+- Run registry (top level used images are: nginx:1.9 and registry:2):
 ```
 	# docker-compose up
 ```
