@@ -1,7 +1,6 @@
-## docker-registry
-- Run your own docker registry:
+## Run your own docker registry using Amazon S3 for data storage
 
-- Follow tutorial here: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-docker-registry-on-ubuntu-14-04
+- How to run a "normal" registry: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-docker-registry-on-ubuntu-14-04
 
 - Run registry:
 ```
