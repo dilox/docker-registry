@@ -8,3 +8,10 @@
 ```
 	# docker-compose up
 ```
+
+- Login (using https):
+
+```
+	# docker login https://YOURDOMAIN
+	Login Succeeded
+```
